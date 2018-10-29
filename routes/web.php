@@ -18,6 +18,8 @@ Route::get('/', function () {
 Route::get('/homepage', 'HomeController@index');
 
 Route::get('hero/{hero_slug}', 'HeroController@show');
+Route::post('hero', 'HeroController@store');
+
 
 Route::get('/hero', 'HeroController@index');
 
